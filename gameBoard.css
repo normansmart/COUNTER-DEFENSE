@@ -1,0 +1,47 @@
+html{
+    width: 100%;
+}
+
+
+
+body{
+    width: 100%;
+}
+
+
+
+.gameBoard{
+
+    width: 70vw;
+    height: 70vh ;
+
+    margin: auto;
+    margin-top: 7vw;
+   
+    border: 1px solid black;
+
+    
+}
+
+.board{
+
+    width: 100%;
+}
+
+
+
+tr{
+  
+    height: 13.75vh;
+    border: 1px solid black;
+
+ 
+ 
+}
+
+
+
+td{
+    border: 1px solid black;
+   
+}
