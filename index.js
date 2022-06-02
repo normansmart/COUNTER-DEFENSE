@@ -2,8 +2,6 @@
 //////////////////////////////////
 
 
-
-//
 let gameDeck = document.getElementsByClassName("combatant-1");
 
 const nextRound = document.querySelector('.nextRound')
