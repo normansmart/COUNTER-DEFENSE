@@ -38,7 +38,7 @@ function pushToAshDeck(card) {
 let sceptile = new ashKetchumCard("Sceptile", 10, "ashKetchumCard" , "./images/sceptile.jpeg");
 let pikachu = new ashKetchumCard("Pikachu", 2, "ashKetchumCard" , "./images/pikachu.jpg");
 let squirtle = new ashKetchumCard("Squirtle", 1, "ashKetchumCard" , "https://i.kym-cdn.com/photos/images/original/001/065/267/f1d.jpg");
-let charizard = new ashKetchumCard("Charizard", 2, "ashKetchumCard");
+let charizard = new ashKetchumCard("Charizard", 2, "ashKetchumCard" , "./images/sceptile.jpeg");
 
 //pushes created card variables into advanceCard deck. 
 pushToAshDeck(sceptile);
