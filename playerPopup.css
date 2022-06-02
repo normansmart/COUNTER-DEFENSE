@@ -1,0 +1,177 @@
+#ac-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+    z-index: 1001;
+}
+
+#popup {
+    width: 555px;
+    height: 375px;
+    background: #FFFFFF;
+    border: 5px solid #000;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    box-shadow: #64686e 0px 0px 3px 3px;
+    -moz-box-shadow: #64686e 0px 0px 3px 3px;
+    -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    position: relative;
+    top: 150px; left: 375px;
+}
+
+body {
+    margin:0 auto;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    /* background:url(images/bg.jpg); */
+    }
+    
+    #container {
+    width:24px;
+    height:24px;
+    display:block;
+    position:static;
+    opacity:1;
+    filter:alpha(opacity=40);
+    -moz-opacity: 0.4;
+    background-color:#fff;
+    z-index:-1;
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    }
+    .topButton{
+    top:0;
+    left:0;
+    }
+    .bottomButton{
+    top:24px;
+    left:24;
+    }
+    #container.hover1 {
+    background-color: #E0E0E0; 
+    }
+    
+    #container2.hover2 {
+    background-color: #E0E0E0;
+    }
+    
+    .link {
+    position:inherit;
+    z-index:1;
+    float:right;
+    padding-top:100px;
+    }
+    #linktomouseover{
+       /* name: Ash */
+        margin-left:6px;
+        color:black;
+        text-decoration:none;
+        z-index:1;
+    }
+    #buttonColumn{
+        height:48px;
+        width:24px;
+        display:block;
+        position:absolute;
+        color:black;
+        margin-top:15px;
+    }
+    #linktomouseover2{
+        margin-left:6px;
+        display:block;
+        color:black;
+        text-decoration:none;
+    }
+    #container2 {
+    width:24px;
+    height:24px;
+    position:static;
+    opacity:1;
+    filter:alpha(opacity=40);
+    -moz-opacity: 0.4;
+    background-color:#fff;
+    z-index:-1;
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    }
+    #ac-wrapper{
+    border-style:solid;
+    border-color:black;  
+    width:216px;
+    height:100px;
+    }
+    .leftRapper{
+    border-right-style:dotted;
+    }
+    #linktomouseover3{
+        margin-left:7px;
+        display:block;
+        color:black;
+        text-decoration:none;
+    }
+    #linktomouseover4{
+        margin-left:8px;
+        display:block;
+        color:black;
+        text-decoration:none;
+    }
+    .rightRapper{
+    border-style:dotted;
+    margin:0px;
+        height:90px;
+        width:100px;
+        display:inline-block;
+    }
+    .leftRapper{
+    border-style:dotted;
+    margin:0px;
+    height:90px;
+    width:100px;
+    display:inline-block;
+    }
+    #container3 {
+    width:24px;
+    height:24px;
+    display:block;
+    position:static;
+    opacity:1;
+    filter:alpha(opacity=40);
+    -moz-opacity: 0.4;
+    background-color:#fff;
+    z-index:-1;
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    }
+    #container3.hover1 {
+    background-color: #E0E0E0; 
+    }
+    #container4 {
+    width:24px;
+    height:24px;
+    display:block;
+    position:static;
+    opacity:1;
+    filter:alpha(opacity=40);
+    -moz-opacity: 0.4;
+    background-color:#fff;
+    z-index:-1;
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    }
+    #container4.hover1 {
+    background-color: #E0E0E0; 
+    }
