@@ -4,29 +4,44 @@ function PopUp(){
 }
 
 const upPop = document.getElementById("ac-wrapper")
-const closePop = document.getElementById("linktomouseover")
-const closePopThree = document.getElementById("linktomouseover3")
-const divForTrainer = document.getElementById("rightSide")
+const ashSelect = document.getElementById("container3")
+const paulSelect = document.getElementById("container")
+//const userTrainer = document.getElementById("leftSide")
+//const otherTrainer = document.getElementById("rightSide")
+const userTrainerImg = document.getElementById("leftImage")
+const userTrainerName = document.getElementById("leftTrainerName")
+const otherTrainerImg = document.getElementById("rightSide")
+const otherTrainerName = document.getElementById("rightTrainerName")
 
-closePop.addEventListener('click', () => {
+
+function moveToLeft() {
+    userTrainerName.textContent = 
+
+
+   // const newTrainerDiv = document.createElement("span")
+   // newTrainerDiv.textContent= "Trainer: 1"
+   // userTrainer.appendChild(newTrainerDiv)
+}
+
+function moveToRight() {
+
+
+   // const newOtherTrainerDiv = document.createElement("span")
+   // newOtherTrainerDiv.textContent= "Trainer: 2"
+   // otherTrainer.appendChild(newOtherTrainerDiv)
+}
+
+ashSelect.addEventListener('click', () => {
     upPop.style.display = "none"
-
-
-    const newTrainerDiv = document.createElement("span")
-    newTrainerDiv.textContent= "Trainer: Ash"
-    divForTrainer.appendChild(newTrainerDiv)
-
-
+    moveToLeft(ashSelect)
+    moveToRight(paulSelect)
 })
 
-closePopThree.addEventListener('click', () => {
+paulSelect.addEventListener('click', () => {
     upPop.style.display = "none"
-
-
-    const newTrainerDiv = document.createElement("span")
-    newTrainerDiv.textContent= "Trainer: Paul"
-    divForTrainer.appendChild(newTrainerDiv)
-
+    moveToLeft(paulSelect)
+    moveToRight(ashSelect)
+    
 })
 
 
