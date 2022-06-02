@@ -50,7 +50,12 @@ body{
 .nextRound{
     width: 100px;
     height: 100px;
+<<<<<<< Updated upstream
     background-color: white;
+=======
+    background-color: rgb(106, 52, 52);
+    position: absolute;
+>>>>>>> Stashed changes
 }
 
 .gameCard{

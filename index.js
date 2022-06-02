@@ -28,42 +28,138 @@ function placeCard(arr) {
         innerArr[0].addEventListener('click', (e) => {
 
             //if advancer card selector is true
+<<<<<<< Updated upstream
             if (advancerSelect === true) {
+=======
+            if (player1Select = true) {
+                player1Select = false
+                document.getElementById('ash').style.backgroundColor = "White"
+                item.append(document.getElementById('ash'))
+
+
+            }
+
+        })
+
+    }
+
+    )
+
+
+
+}
+
+
+
+
+
+function firstRowCombat() {
+
+    const firstRowFighterGary = document.querySelector('#d5 div')
+
+    const firstRowFighterAsh = document.querySelector('#d1 div')
+
+    const fighterOne = document.querySelector('.combatant-gary')
+
+    const fighterTwo = document.querySelector('.combatant-ash')
+
+    fighterOne.append(firstRowFighterGary)
+
+    fighterTwo.append(firstRowFighterAsh)
+
+
+
+
+}
+
+
+
+
+>>>>>>> Stashed changes
 
                 document.getElementById('advance').style.backgroundColor = "White"
                 innerArr[0].append(document.getElementById('advance'))
                 innerArr[0].id = "filled"
 
 
+<<<<<<< Updated upstream
             }
+=======
+
+function combat2(){
+
+    const fighterGaryPower = document.querySelector('.combatant-gary div h1').textContent
+    
+    const fighterAshPower = document.querySelector('.combatant-ash div h1').textContent
+
+    const ashHealthBar = document.querySelector('.ash-health h1').textContent
+
+    const garyHealthBar = document.querySelector('.gary-health h1').textContent
 
 
 
+
+ if ( parseInt(fighterAshPower) > parseInt(fighterGaryPower) ){
+     
+   
+>>>>>>> Stashed changes
+
+    let powerDifference =  parseInt(fighterAshPower) - parseInt(fighterGaryPower);
+
+    document.querySelector('.combatant-ash div h1').textContent = powerDifference
+
+  
+    const garyHealth = parseInt(garyHealthBar) - powerDifference
+    document.querySelector('.gary-health h1').textContent = garyHealth
+    
 
 
 
         })
 
+<<<<<<< Updated upstream
         for (const item of innerArr) {
 
 
+=======
+    document.querySelector('.combatant-gary div').remove()
+
+
+    d1.append(document.querySelector('.combatant-ash div'))
+>>>>>>> Stashed changes
 
 
 
 
 
+ } else if( parseInt(fighterGaryPower) > parseInt(fighterAshPower) ){
 
 
 
+<<<<<<< Updated upstream
         }
 
+=======
+    let powerDifference =  parseInt(fighterGaryPower) - parseInt(fighterAshPower);
+
+    document.querySelector('.combatant-gary div h1').textContent = powerDifference
+>>>>>>> Stashed changes
+
+    document.querySelector('.combatant-ash div').remove()
+
+
+<<<<<<< Updated upstream
+=======
+    const ashHealth = parseInt(ashHealthBar) - powerDifference
+    document.querySelector('.ash-health h1').textContent = ashHealth
+    
+>>>>>>> Stashed changes
+
+    d5.append(document.querySelector('.combatant-gary div'))
 
 
 
-
-
-
-
+ }
 
     }
 
@@ -71,6 +167,43 @@ function placeCard(arr) {
 }
 
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+
+
+nextRound.addEventListener('click', (e) => {
+
+
+
+    firstRowCombat()
+
+
+    setTimeout(() => {
+        combat1()
+    }, 2000);
+
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 //feeds object information into parser that renders the cards in a div
 renderCardsToDeck(advanceDeck);
 
