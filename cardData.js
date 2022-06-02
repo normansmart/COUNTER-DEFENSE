@@ -1,47 +1,50 @@
-// utility/shorcut methods
-const $ = query => document.querySelector( query);
 
 
 
+
+
+
+
+
+//deck array that holds cards for ash ketchum character
+const ashDeck = []
 
 // constructs objects containing card information for advancer deck
-  class advanceCard{ 
-    
-    constructor(name, cost, power, type) {
-        this.name = name;
-        this.cost = cost;
-        this.power = power;  
-        this.type = type;
-      
-    }
-  
- } 
+class ashKetchumCard {
 
+  constructor(name, power, type, image) {
+    this.name = name;
 
- //deck array that holds cards that advance
-const advanceDeck = []
+    this.power = power;
+
+    this.type = type;
+
+    this.image = image;
+  }
+
+}
 
 
 //function to push initialized advance cards to deck array
-function pushToAdvance(card){
-  	
-    advanceDeck.push(card);
-    
-  }
+function pushToAshDeck(card) {
+
+  ashDeck.push(card);
+
+}
 
 
 
-//advancer cards
-let newAdvanceCard = new advanceCard("Yhorm" , 10 , 15 , "advancer");
-let newAdvanceCard1 = new advanceCard("happy" , 2 , 7);
-let newAdvanceCard2 = new advanceCard("Queri" , 1 , 12);
-let newAdvanceCard4 = new advanceCard("Jerry" , 2 , 21);
+//ash's cards
+let sceptile = new ashKetchumCard("Sceptile", 10, "ashKetchumCard" , "./images/sceptile.jpeg");
+let pikachu = new ashKetchumCard("Pikachu", 2, "ashKetchumCard" , "./images/pikachu.jpg");
+let squirtle = new ashKetchumCard("Squirtle", 1, "ashKetchumCard" , "https://i.kym-cdn.com/photos/images/original/001/065/267/f1d.jpg");
+let charizard = new ashKetchumCard("Charizard", 2, "ashKetchumCard");
 
 //pushes created card variables into advanceCard deck. 
-pushToAdvance(newAdvanceCard);
-pushToAdvance(newAdvanceCard1);
-pushToAdvance(newAdvanceCard2);
-pushToAdvance(newAdvanceCard4);
+pushToAshDeck(sceptile);
+pushToAshDeck(pikachu);
+pushToAshDeck(squirtle);
+pushToAshDeck(charizard);
 
 
 
@@ -52,39 +55,43 @@ pushToAdvance(newAdvanceCard4);
 
 
 // constructs objects containing card information for blocker deck
-  class blockerCard{
-    
-    constructor(name, cost, power) {
-        this.name = name;
-        this.cost = cost;
-        this.power = power;
-    }
-  
+class garyOakCard {
+
+  constructor(name, power, type, image) {
+    this.name = name;
+
+    this.power = power;
+
+    this.type = type;
+
+    this.image = image;
+  }
+
 }
 
 //array that holds cards that block
-const blockDeck = []
+const garyOakDeck = []
 
 //blocker cards to be initialized
-let newBlockCard = new blockerCard("Gon" , 3 , 6);
-let newBlockCard1 = new blockerCard("Franz" , 2 , 9);
-let newBlockCard2 = new blockerCard("Redding" , 4 , 15);
-let newBlockCard4 = new blockerCard("Henna" , 2 , 19);
+let newBlockCard = new garyOakCard("Psyduck", 3, "garyOakCard");
+let newBlockCard1 = new garyOakCard("Squirtle", 2, "garyOakCard");
+let newBlockCard2 = new garyOakCard("Mew II", 4, "garyOakCard");
+let newBlockCard4 = new garyOakCard("Togepi", 2, "garyOakCard");
 
 
 //function that pushes initialized blocker cards to the deck array
-function pushToBlock(card){
-  	
-  blockDeck.push(card);
-  
+function pushToGaryDeck(card) {
+
+  garyOakDeck.push(card);
+
 }
 
 
 //pushes created blocker card
-pushToBlock(newBlockCard);
-pushToBlock(newBlockCard1);
-pushToBlock(newBlockCard2);
-pushToBlock(newBlockCard4);
+pushToGaryDeck(newBlockCard);
+pushToGaryDeck(newBlockCard1);
+pushToGaryDeck(newBlockCard2);
+pushToGaryDeck(newBlockCard4);
 
 
 
@@ -92,65 +99,67 @@ pushToBlock(newBlockCard4);
 
 
 
-// sets card selection for when a card is to be placed, default value false
 
-let advancerSelect = false
+
+
 // function to render each card array
-function renderCardsToDeck(cardDeck){
+function renderAshCardsToDeck(cardDeck) {
 
-// for each card obj in deck array
-    cardDeck.forEach(cardInfoObj => {
+
+
+  // for each card obj in deck array
+  cardDeck.forEach(cardInfoObj => {
+
 
 
     //creates div the card info will be rendered on a created div
-  
-    const card = document.createElement("div");
-    card.className = "gameCard";
+
+    const ashCard = document.createElement("div");
+    ashCard.className = "gameCard";
 
     //create tags for the card obj key values
-    const cardName = document.createElement('h2');
-    const cardCost = document.createElement('h2');
-    const cardPower = document.createElement('h2');
+    const ashCardName = document.createElement('h3');
+    const ashCardPower = document.createElement('h1');
+
+    const ashCardImage = document.createElement('img');
 
     //tags text content set to card obj key values
-    cardName.textContent = cardInfoObj.name;
-    cardCost.textContent = cardInfoObj.cost;
-    cardPower.textContent = cardInfoObj.power;
+    ashCardName.textContent = cardInfoObj.name;
+    ashCardPower.textContent = cardInfoObj.power;
+    ashCardImage.src = cardInfoObj.image
+    
 
     //append card obj info onto the card div: 
-    card.append(cardName, cardCost, cardPower);
+    ashCard.append(ashCardName, ashCardPower , ashCardImage);
 
 
-    
+
+
 
 
     // appends each created card onto the player hud
-    document.querySelector('.combatant-1').append(card);
-
-  
-
- //on click, changes the poperties of the card div and sets card selector to true
-card.addEventListener('click' , (e) =>{
-
- 
-    advancerSelect = true
-
-    card.style.backgroundColor= "Blue"
-
-    card.id = "advance"
-
-    
-   
-
- })
-    
+    document.querySelector('.player-1').append(ashCard);
 
 
-    });
 
-    
 
-    
+    //on click, changes the poperties of the card div and sets card selector to true
+    ashCard.addEventListener('click', (e) => {
+
+      ashCard.style.border = "solid 5px blue"
+
+      ashCard.id = "ash"
+
+
+
+    })
+
+
+
+  });
+
+
+
 
 }
 
@@ -158,12 +167,58 @@ card.addEventListener('click' , (e) =>{
 
 
 
+function renderGaryCardsToDeck(cardDeck) {
+
+
+
+  // for each card obj in deck array
+  cardDeck.forEach(cardInfoObj => {
+
+
+
+    //creates div the card info will be rendered on a created div
+
+    const garyCard = document.createElement("div");
+    garyCard.className = "gameCard";
+
+    //create tags for the card obj key values
+    const garyCardName = document.createElement('h3');
+    const garyCardPower = document.createElement('h1');
+
+    //tags text content set to card obj key values
+    garyCardName.textContent = cardInfoObj.name;
+    garyCardPower.textContent = cardInfoObj.power;
+
+    //append card obj info onto the card div: 
+    garyCard.append(garyCardName, garyCardPower);
 
 
 
 
 
+    // appends each created card onto the player hud
+    document.querySelector('.player-2').append(garyCard);
+    let player2Select = false
+
+    //on click, changes the poperties of the card div and sets card selector to true
+    garyCard.addEventListener('click', (e) => {
+
+      garyCard.style.backgroundColor = "Green"
+
+      garyCard.id = "gary"
+
+   
+
+    })
 
 
 
+
+
+  });
+
+
+
+
+}
 

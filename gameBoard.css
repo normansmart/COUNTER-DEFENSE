@@ -1,7 +1,5 @@
 html{
     width: 100vw;
-  
-  
 }
 
 
@@ -26,7 +24,7 @@ body{
 
 
 
-.combatant-1{
+.player-1{
 
     width: 15vw;
     height: 100vh;
@@ -36,8 +34,7 @@ body{
 }
 
 
-
-.combatant-2{
+.player-2{
 
     width: 15vw;
     height: 100vh;
@@ -46,11 +43,26 @@ body{
 
 }
 
+.combatfield{
+
+    width: 70vw;
+    height: 60vh;
+   
+    float: left;
+
+
+  
+}
+
+
+
+
+
 
 .nextRound{
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: rgb(106, 52, 52);
 }
 
 .gameCard{
@@ -61,7 +73,30 @@ body{
 
     margin: auto;
 
+    margin-bottom: 20px;
+    text-align: center;
+
 }
+
+.gameCard img{
+
+    width: 100%;
+
+    height: 100%;
+}
+
+.gameCard h3 {
+
+    position: absolute;
+}
+
+
+.gameCard h1 {
+
+    color: rgb(247, 245, 120);
+    position: absolute;
+}
+
 
 
 
@@ -71,6 +106,11 @@ body{
     height: 100vh;
     background-color: rgb(129, 255, 127);
     float: left;
+
+    background-image: url(./images/stagebackground2.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
   
 }
 
