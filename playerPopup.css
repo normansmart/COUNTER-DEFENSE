@@ -36,17 +36,6 @@ body {
     #container {
     width:24px;
     height:24px;
-    display:block;
-    position:static;
-    opacity:1;
-    filter:alpha(opacity=40);
-    -moz-opacity: 0.4;
-    background-color:#fff;
-    z-index:-1;
-    transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     }
     /*.topButton{
     top:0;
@@ -143,17 +132,6 @@ body {
     #container3 {
     width:24px;
     height:24px;
-    display:block;
-    position:static;
-    opacity:1;
-    filter:alpha(opacity=40);
-    -moz-opacity: 0.4;
-    background-color:#fff;
-    z-index:-1;
-    transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     }
     #container3.hover1 {
     background-color: #E0E0E0; 
@@ -175,4 +153,23 @@ body {
     }
     #container4.hover1 {
     background-color: #E0E0E0; 
+    }
+
+    #popup-title {
+        text-align: center;
+    }
+
+    #popup-trainer-container {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    #ash-container {
+        float: left;
+        margin-left: 60px;
+    }
+
+    #paul-container {
+        float: right; 
+        margin-right: 169px;
     }
