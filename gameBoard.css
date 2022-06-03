@@ -1,7 +1,5 @@
 html{
     width: 100vw;
-  
-  
 }
 
 
@@ -10,8 +8,6 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0%;
-
-    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -19,37 +15,64 @@ body{
 .gameBoard{
 
     width: 100vw;
-    height: 100vh ;
-  
-    background-color: aqua;
+    height: 100vh;
     display: inline-block;
     
 }
 
 
-
-.combatant-1{
+#empty{
+    width: 100px;
+    height: 100px;
+    display: none;
+    
+}
+.player-1{
 
     width: 15vw;
     height: 100vh;
-    background-color: rgb(236, 42, 42);
+    background-color: rgba(0, 18, 65, 0.891);
     float: left;
 
 }
 
 
 
-.combatant-2{
+
+.deck-container-ash{
+
+    width: 80%;
+
+    height: 20%;
+
+    margin: auto;
+
+    
+
+}
+
+.deck-container-gary{
+
+    width: 80%;
+
+    height: 20%;
+
+    margin: auto;
+
+    
+
+}
+
+
+.player-2{
 
     width: 15vw;
     height: 100vh;
-    background-color: rgb(236, 42, 42);
+    background-color: rgba(0, 18, 65, 0.891);
     float: right;
 
 }
 
-<<<<<<< Updated upstream
-=======
 .combatfield{
 
     width: 70vw;
@@ -76,45 +99,34 @@ body{
     margin: auto;
 }
 
-.ash-health{
-
-    width: 80%;
-    height: 50px;
-    margin: auto;
-    text-align: center;
-}
-
-.ash-health h1{
-
-   width: 100%;
-    color: aliceblue;
-}
 
 
 
-
-
->>>>>>> Stashed changes
 
 .nextRound{
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: rgb(27, 105, 251);
+    position: absolute;
+    top: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    margin-left: 25px;
+    color: white;
 }
 
 .gameCard{
-    width: 80%;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   
     background-color: white;
 
     margin: auto;
 
-<<<<<<< Updated upstream
-}
-
-
-=======
     margin-bottom: 20px;
     text-align: center;
 
@@ -132,10 +144,10 @@ body{
    width: 100%;
    text-align: center;
    color: white;
-   font-size: 30px;
-   font-weight: 700;
-   color: rgb(249, 248, 152);
-    -webkit-text-stroke-width: 2px;
+   font-size: 28px;
+   font-weight: 600;
+   color: rgb(243, 229, 157);
+    -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(38, 38, 38);
 }
 
@@ -143,11 +155,10 @@ body{
 .gameCard h1 {
     width: 100%;
     text-align: center;
-    color: rgb(249, 171, 46);
-    
+    color: rgb(235, 231, 34);
     -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(38, 38, 38);
-  font-size: 50px;
+  font-size: 35px;
    
 }
 
@@ -155,22 +166,53 @@ body{
 
 
 
->>>>>>> Stashed changes
 .battlefield{
     width: 70vw;
     height: 100vh;
-    background-color: rgb(129, 255, 127);
+   
     float: left;
+
+    background-image: url(./images/stagebackground2.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
   
 }
 
-.field-box{
+
+.field-box1{
 
     width: 17vw;
     height: 19.6%;
     
     margin: .15vw;
-    background-color: aliceblue;
+    background-color: rgba(78, 187, 85, 0.219);
+   
+    
+    float: left;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('./images/pokeballgary.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+    border-radius: 10px;
+}
+
+
+
+.field-box2{
+
+    width: 17vw;
+    height: 19.6%;
+    
+    margin: .15vw;
+    background-color: rgba(31, 71, 139, 0.438);
    
     
     float: left;
@@ -181,14 +223,18 @@ body{
     align-items: center;
 
 
-   
+    background-image: url('./images/pokeballash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    border-radius: 10px;
+    
 }
 
 
 
 
-<<<<<<< Updated upstream
-=======
 .game-over{
     width: 70vw;
     height: 100vh;
@@ -220,5 +266,3 @@ margin: auto;
 }
 
 
-
->>>>>>> Stashed changes
