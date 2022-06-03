@@ -33,12 +33,17 @@ function pushToAshDeck(card) {
 
 
 //ash's cards
+
+let gyrados = new ashKetchumCard("Gyrados", 9, 'https://i.redd.it/rvoivz72p3m41.jpg');
+let tyranitar = new ashKetchumCard("Tyranutar", 9, 'https://i.pinimg.com/originals/53/79/39/5379392fd5ceda33731b75a9134d7421.jpg');
+let magikarp = new ashKetchumCard("Magikarp", 9, 'https://pbs.twimg.com/media/CokvmXcUEAAhuz-?format=jpg&name=900x900');
 let sceptile = new ashKetchumCard("Sceptile", 10, "https://i.kym-cdn.com/photos/images/original/001/065/267/f1d.jpg");
 let pikachu = new ashKetchumCard("Pikachu", 12, "https://i.pinimg.com/originals/13/35/9b/13359bb6a2e6fe376ad221d7d57e5191.jpg");
 let squirtle = new ashKetchumCard("Squirtle", 10, "https://64.media.tumblr.com/4127017e501cd0ac8b924285aacc20c3/tumblr_p4im6y3QDN1rjenv2o1_1280.jpg");
 let charizard = new ashKetchumCard("Charizard", 9, "https://konachan.com/image/64be099dfca7edb2f54d7d717e0f4e64/Konachan.com%20-%20152854%20charizard%20dragon%20fire%20grass%20lif_%28lif-ppp%29%20pikachu%20pokemon%20wings.jpg");
 let bulbasaur = new ashKetchumCard("Bulbasaur", 9, "https://i.pinimg.com/originals/d8/e5/44/d8e54478d116d9c435ed6f0aed48c3e7.jpg");
 let lapras = new ashKetchumCard("Lapras", 9, './images/lapras.jpeg');
+let mew = new ashKetchumCard("Mew", 9, 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f4e9ef5-fbc4-400e-8e98-00d3452c2236/d7piy4l-4eb824f1-99d0-4f1c-a84a-3907f55a4fb3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmNGU5ZWY1LWZiYzQtNDAwZS04ZTk4LTAwZDM0NTJjMjIzNlwvZDdwaXk0bC00ZWI4MjRmMS05OWQwLTRmMWMtYTg0YS0zOTA3ZjU1YTRmYjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jsoSlzD51BWl7vHOf5pqWXz8Z8blpBLfMXDaIYlFhBo');
 let machamp = new ashKetchumCard("Machamp", 9, 'https://pbs.twimg.com/media/Dns-IK9W0AAqQxj?format=jpg&name=medium');
 let rayquaza = new ashKetchumCard("Rayquaza", 9, 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0eb0f155-e353-4cbc-882d-ea2e9025c5b5/ddduvpy-89780fc7-cc24-4b95-a2db-fec86b1ac2ef.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBlYjBmMTU1LWUzNTMtNGNiYy04ODJkLWVhMmU5MDI1YzViNVwvZGRkdXZweS04OTc4MGZjNy1jYzI0LTRiOTUtYTJkYi1mZWM4NmIxYWMyZWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Wj_TncuOijhl7xI7OJhNeb_RLDGBNvNS1nVmIThmrYw');
 let arceus = new ashKetchumCard("Arceus", 9, 'https://i.pinimg.com/originals/9f/26/ce/9f26ce59a9f7b5f7df79bcbf7bc9eedd.jpg');
@@ -54,6 +59,13 @@ pushToAshDeck(squirtle);
 pushToAshDeck(squirtle);
 pushToAshDeck(lapras);
 pushToAshDeck(machamp);
+pushToAshDeck(mew);
+pushToAshDeck(gyrados);
+pushToAshDeck(magikarp);
+pushToAshDeck(magikarp);
+pushToAshDeck(tyranitar);
+
+
 
 
 
