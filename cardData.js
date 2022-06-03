@@ -43,7 +43,11 @@ let squirtle = new ashKetchumCard("Squirtle", 10, "https://64.media.tumblr.com/4
 let charizard = new ashKetchumCard("Charizard", 9, "https://konachan.com/image/64be099dfca7edb2f54d7d717e0f4e64/Konachan.com%20-%20152854%20charizard%20dragon%20fire%20grass%20lif_%28lif-ppp%29%20pikachu%20pokemon%20wings.jpg");
 let bulbasaur = new ashKetchumCard("Bulbasaur", 9, "https://i.pinimg.com/originals/d8/e5/44/d8e54478d116d9c435ed6f0aed48c3e7.jpg");
 let lapras = new ashKetchumCard("Lapras", 9, './images/lapras.jpeg');
+
 let mew = new ashKetchumCard("Mew", 9, 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f4e9ef5-fbc4-400e-8e98-00d3452c2236/d7piy4l-4eb824f1-99d0-4f1c-a84a-3907f55a4fb3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmNGU5ZWY1LWZiYzQtNDAwZS04ZTk4LTAwZDM0NTJjMjIzNlwvZDdwaXk0bC00ZWI4MjRmMS05OWQwLTRmMWMtYTg0YS0zOTA3ZjU1YTRmYjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jsoSlzD51BWl7vHOf5pqWXz8Z8blpBLfMXDaIYlFhBo');
+
+let pidgeot = new ashKetchumCard("Pidgeot", 9, 'https://i.pinimg.com/originals/12/90/4c/12904cf5f3b2103dd98128fe9cd8a223.jpg');
+
 let machamp = new ashKetchumCard("Machamp", 9, 'https://pbs.twimg.com/media/Dns-IK9W0AAqQxj?format=jpg&name=medium');
 let rayquaza = new ashKetchumCard("Rayquaza", 9, 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0eb0f155-e353-4cbc-882d-ea2e9025c5b5/ddduvpy-89780fc7-cc24-4b95-a2db-fec86b1ac2ef.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBlYjBmMTU1LWUzNTMtNGNiYy04ODJkLWVhMmU5MDI1YzViNVwvZGRkdXZweS04OTc4MGZjNy1jYzI0LTRiOTUtYTJkYi1mZWM4NmIxYWMyZWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Wj_TncuOijhl7xI7OJhNeb_RLDGBNvNS1nVmIThmrYw');
 let arceus = new ashKetchumCard("Arceus", 9, 'https://i.pinimg.com/originals/9f/26/ce/9f26ce59a9f7b5f7df79bcbf7bc9eedd.jpg');
@@ -56,7 +60,7 @@ pushToAshDeck(pikachu);
 pushToAshDeck(pikachu);
 pushToAshDeck(squirtle);
 pushToAshDeck(squirtle);
-pushToAshDeck(squirtle);
+pushToAshDeck(pidgeot);
 pushToAshDeck(lapras);
 pushToAshDeck(machamp);
 pushToAshDeck(mew);
@@ -64,6 +68,8 @@ pushToAshDeck(gyrados);
 pushToAshDeck(magikarp);
 pushToAshDeck(magikarp);
 pushToAshDeck(tyranitar);
+
+
 
 
 
@@ -94,7 +100,7 @@ class garyOakCard {
 const garyOakDeck = []
 
 //blocker cards to be initialized
-let newBlockCard = new garyOakCard("Psyduck", 300, "garyOakCard");
+let newBlockCard = new garyOakCard("Psyduck", 20, "garyOakCard");
 let newBlockCard1 = new garyOakCard("Squirtle", 200, "garyOakCard");
 let newBlockCard2 = new garyOakCard("Mew II", 40, "garyOakCard");
 let newBlockCard4 = new garyOakCard("Togepi", 20, "garyOakCard");

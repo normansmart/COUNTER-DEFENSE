@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,.6);
+    /* background: rgba(255,255,255,.6); */
+    border: 0;
     z-index: 1001;
 }
 
@@ -12,7 +13,7 @@
     width: 555px;
     height: 375px;
     background: #FFFFFF;
-    border: 5px solid #000;
+    border: 5px solid rgb(12, 47, 134);
     border-radius: 25px;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -35,22 +36,11 @@ body {
     #container {
     width:24px;
     height:24px;
-    display:block;
-    position:static;
-    opacity:1;
-    filter:alpha(opacity=40);
-    -moz-opacity: 0.4;
-    background-color:#fff;
-    z-index:-1;
-    transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     }
-    .topButton{
+    /*.topButton{
     top:0;
     left:0;
-    }
+    } */
     .bottomButton{
     top:24px;
     left:24;
@@ -76,14 +66,14 @@ body {
         text-decoration:none;
         z-index:1;
     }
-    #buttonColumn{
+   /* #buttonColumn{
         height:48px;
         width:24px;
         display:block;
         position:absolute;
         color:black;
         margin-top:15px;
-    }
+    } */
     #linktomouseover2{
         margin-left:6px;
         display:block;
@@ -110,9 +100,9 @@ body {
     width:216px;
     height:100px;
     }
-    .leftRapper{
+   /* .leftRapper{
     border-right-style:dotted;
-    }
+    } */
     #linktomouseover3{
         margin-left:7px;
         display:block;
@@ -126,14 +116,14 @@ body {
         text-decoration:none;
     }
     .rightRapper{
-    border-style:dotted;
+    border-style:none;
     margin:0px;
         height:90px;
         width:100px;
         display:inline-block;
     }
     .leftRapper{
-    border-style:dotted;
+    border-style:none;
     margin:0px;
     height:90px;
     width:100px;
@@ -142,17 +132,6 @@ body {
     #container3 {
     width:24px;
     height:24px;
-    display:block;
-    position:static;
-    opacity:1;
-    filter:alpha(opacity=40);
-    -moz-opacity: 0.4;
-    background-color:#fff;
-    z-index:-1;
-    transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     }
     #container3.hover1 {
     background-color: #E0E0E0; 
@@ -172,6 +151,29 @@ body {
     -webkit-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
     }
+
     #container4.hover1 {
     background-color: #E0E0E0; 
+    }
+
+    #popup-title {
+        text-align: center;
+        font-size: 35px;
+        color: #ffcb05;
+        text-shadow: -2px 2px 2px #3c5aa6;
+    }
+
+    #popup-trainer-container {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    #ash-container {
+        float: left;
+        margin-left: 60px;
+    }
+
+    #paul-container {
+        float: right; 
+        margin-right: 169px;
     }
