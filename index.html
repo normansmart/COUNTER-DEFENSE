@@ -3,15 +3,16 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <link rel="stylesheet" type="text/css" href="./gameBoard.css">
+  <link rel="stylesheet" type="text/css" href="./playerPopup.css">
+  <script type="text/javascript" src="./cardData.js"> </script>
 
-    <link rel="stylesheet" type="text/css" href="./gameBoard.css">
-    <script type="text/javascript" src="./cardData.js"> </script>
-
-    <script defer type="text/javascript" src="./index.js"> </script>
+  <script defer type="text/javascript" src="./index.js"> </script>
+  <script type="text/javascript" src="./playerPopup.js" defer> </script>
 
 </head>
 
@@ -20,12 +21,32 @@
 <body>
 
 
+  <div id="ac-wrapper">
+    <div id="popup">
+      <h2 id="popup-title">Select Your Trainer</h2>
+      <div id="popup-trainer-container">
+        <div id="ash-container">
+          <div id="container3" class="topButton">
+            <img id="linktomouseover" src="https://tinyurl.com/2ryh7pdz" alt="Ash" width="140.42" height="150" />
+            <p >Ash</p>
+          </div>
+        </div>
+        <div id="paul-container">
+          <div id="container" class="topButton">
+            <img id="linktomouseover3" src="https://tinyurl.com/3pdf2k5x" alt="Ash" width="109" height="150" />
+            <p>Paul</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <div class="gameBoard">
 
 
         <div class="player-1">
+          <div id="leftSide" style="height: 170px;"></div>
 
             <div class="trainer-ash">
 
@@ -69,6 +90,7 @@
 
 
         <div class="player-2">
+          <div id="rightSide" style="height: 170px;"></div>
 
             <div class="trainer-ash">
 
@@ -147,17 +169,11 @@
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
     </div>
+
+
+
+  </div>
 
 
 
