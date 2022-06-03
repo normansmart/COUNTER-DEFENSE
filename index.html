@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
   <link rel="stylesheet" type="text/css" href="./gameBoard.css">
   <link rel="stylesheet" type="text/css" href="./playerPopup.css">
   <script type="text/javascript" src="./cardData.js"> </script>
@@ -20,7 +19,6 @@
 
 
 <body>
-
 
 
   <div id="ac-wrapper">
@@ -44,6 +42,40 @@
   </div>
 
 
+    <div class="gameBoard">
+
+
+        <div class="player-1">
+          <div id="leftSide" style="height: 170px;"></div>
+
+            <div class="trainer-ash">
+
+                <div class="ash-image">
+
+                </div>
+
+
+                <div class="ash-health">
+
+
+                    <h1> 100 </h1>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+            <div class="deck-container-ash">
+
+
+
+
+            </div>
 
 
 
@@ -52,89 +84,91 @@
 
 
 
-  <div class="gameBoard">
 
-
-    <div id="leftColumn" class="combatant-1">
-
-      <span id="leftSide">
-        <!-- <img id="leftImage" src="linkR" alt="Trainer 2" width="140.42" height="150"/>  
-              <p id="leftTrainerName">
-              Name
-            </p> -->
-      </span>
-
-      <div class="nextRound">
-
-      </div>
-
-
-    </div>
-
-
-    <div class="battlefield">
+        </div>
 
 
 
-      <div id="d5" class="field-box"></div>
-      <div id="c5" class="field-box"></div>
-      <div id="b5" class="field-box"></div>
-      <div id="a5" class="field-box"></div>
+        <div class="player-2">
+          <div id="rightSide" style="height: 170px;"></div>
+
+            <div class="trainer-ash">
+
+                <div class="gary-health">
+
+                    <h1> 100 </h1>
+
+
+                </div>
+
+
+            </div>
 
 
 
 
-      <div id="d4" class="field-box"></div>
-      <div id="c4" class="field-box"></div>
-      <div id="b4" class="field-box"></div>
-      <div id="a4" class="field-box"></div>
+            <div class="deck-container-gary">
 
 
 
 
-      <div id="d3" class="field-box"></div>
-      <div id="c3" class="field-box"></div>
-      <div id="b3" class="field-box"></div>
-      <div id="a3" class="field-box"></div>
+            </div>
+
+        </div>
+
+
+        <div class="battlefield">
+
+
+
+            <div id="d5" class="field-box1"></div>
+            <div id="c5" class="field-box1"></div>
+            <div id="b5" class="field-box1"></div>
+            <div id="a5" class="field-box1"></div>
 
 
 
 
-      <div id="d2" class="field-box"></div>
-      <div id="c2" class="field-box"></div>
-      <div id="b2" class="field-box"></div>
-      <div id="a2" class="field-box"></div>
+            <div class="combatfield">
+
+                <div class="nextRound">
+
+                    RESOLVE
+
+                </div>
+
+
+                <div class="combatant-gary">
+
+
+
+                </div>
+
+
+
+                <div class="combatant-ash">
 
 
 
 
-      <div id="d1" class="field-box"></div>
-      <div id="c1" class="field-box"></div>
-      <div id="b1" class="field-box"></div>
-      <div id="a1" class="field-box"></div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div id="d1" class="field-box2"></div>
+            <div id="c1" class="field-box2"></div>
+            <div id="b1" class="field-box2"></div>
+            <div id="a1" class="field-box2"></div>
 
 
 
 
 
-    </div>
-
-
-
-
-
-
-    <div id="rightColumn" class="combatant-2">
-      <span id="rightSide">
-        <!-- <img id="rightImage" src="linkL" alt="Trainer 1" width="140.42" height="150"/>  
-            <p id="rightTrainerName">
-            Name
-          </p> -->
-      </span>
-
-
-
-
+        </div>
     </div>
 
 
@@ -150,7 +184,17 @@
 
 
 
+    <div class="game-over">
 
+      
+
+            <h1> Game Over!</h1>
+
+            <img class="game-over-image" />
+
+        
+
+    </div>
 
 
 
