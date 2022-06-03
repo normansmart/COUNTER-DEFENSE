@@ -3,17 +3,17 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
-    <link rel="stylesheet" type="text/css" href="./gameBoard.css">
-    <link rel="stylesheet" type="text/css" href="./playerPopup.css">
-    <script type="text/javascript" src="./cardData.js"> </script>
+  <link rel="stylesheet" type="text/css" href="./gameBoard.css">
+  <link rel="stylesheet" type="text/css" href="./playerPopup.css">
+  <script type="text/javascript" src="./cardData.js"> </script>
 
-    <script defer type="text/javascript" src="./index.js" > </script>
-    <script type="text/javascript" src="./playerPopup.js" defer> </script>
+  <script defer type="text/javascript" src="./index.js"> </script>
+  <script type="text/javascript" src="./playerPopup.js" defer> </script>
 
 </head>
 
@@ -22,36 +22,101 @@
 <body>
 
 
-    
-    <div id="ac-wrapper">
-        <div id="popup">
-                <h2>Select Your Trainer</h2>
-                <span>Ash
-                    <span class="leftRapper">
-                        <span id="buttonColumn">         
-                          <span id="container3" class="topButton">
-                            <!-- <a href="" id="linktomouseover"><img src="https://tinyurl.com/2ryh7pdz" width="140.42" height="150" /></a> -->
-                            <img id="linktomouseover" src="https://tinyurl.com/2ryh7pdz" alt="Ash" width="140.42" height="150"/>  
-                          </span>
-                          <span>Paul</span>
-                        </span>
-                      </span>
-                      <span class="rightRapper">
-                        <span id="buttonColumn">         
-                          <span id="container" class="topButton">
-                            <!-- <a href="" id="linktomouseover3"> <img src="https://tinyurl.com/3pdf2k5x" width="108.55" height="150" /></a> -->
-                            <img id="linktomouseover3" src="https://tinyurl.com/3pdf2k5x" alt="Ash" width="109" height="150"/>  
-                          </span>
-                        </span>
-                      </span>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                </span>
-                <input type="submit" name="submit" value="Start Your Battle" />
-            
+
+  <div id="ac-wrapper">
+    <div id="popup">
+      <h2 id="popup-title">Select Your Trainer</h2>
+      <div id="popup-trainer-container">
+        <div id="ash-container">
+          <div id="container3" class="topButton">
+            <img id="linktomouseover" src="https://tinyurl.com/2ryh7pdz" alt="Ash" width="140.42" height="150" />
+            <p >Ash</p>
+          </div>
         </div>
+        <div id="paul-container">
+          <div id="container" class="topButton">
+            <img id="linktomouseover3" src="https://tinyurl.com/3pdf2k5x" alt="Ash" width="109" height="150" />
+            <p>Paul</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="gameBoard">
+
+
+    <div id="leftColumn" class="combatant-1">
+
+      <span id="leftSide">
+        <!-- <img id="leftImage" src="linkR" alt="Trainer 2" width="140.42" height="150"/>  
+              <p id="leftTrainerName">
+              Name
+            </p> -->
+      </span>
+
+      <div class="nextRound">
+
+      </div>
+
+
+    </div>
+
+
+    <div class="battlefield">
+
+
+
+      <div id="d5" class="field-box"></div>
+      <div id="c5" class="field-box"></div>
+      <div id="b5" class="field-box"></div>
+      <div id="a5" class="field-box"></div>
+
+
+
+
+      <div id="d4" class="field-box"></div>
+      <div id="c4" class="field-box"></div>
+      <div id="b4" class="field-box"></div>
+      <div id="a4" class="field-box"></div>
+
+
+
+
+      <div id="d3" class="field-box"></div>
+      <div id="c3" class="field-box"></div>
+      <div id="b3" class="field-box"></div>
+      <div id="a3" class="field-box"></div>
+
+
+
+
+      <div id="d2" class="field-box"></div>
+      <div id="c2" class="field-box"></div>
+      <div id="b2" class="field-box"></div>
+      <div id="a2" class="field-box"></div>
+
+
+
+
+      <div id="d1" class="field-box"></div>
+      <div id="c1" class="field-box"></div>
+      <div id="b1" class="field-box"></div>
+      <div id="a1" class="field-box"></div>
+
+
+
+
+
     </div>
 
 
@@ -59,87 +124,22 @@
 
 
 
+    <div id="rightColumn" class="combatant-2">
+      <span id="rightSide">
+        <!-- <img id="rightImage" src="linkL" alt="Trainer 1" width="140.42" height="150"/>  
+            <p id="rightTrainerName">
+            Name
+          </p> -->
+      </span>
 
-
-
-
-    <div class="gameBoard">
-
-
-        <div class="combatant-1">
-
-            <div id="rightSide"></div>
-            <div class="nextRound"> 
-
-            </div>
-
-
-        </div>
-       
-
-        <div class="battlefield">
-
-            
-           
-            <div id="d5" class="field-box"></div>
-            <div id="c5" class="field-box"></div>
-            <div id="b5" class="field-box"></div>
-            <div id="a5" class="field-box"></div>
-
-
-
-          
-            <div id="d4" class="field-box"></div>
-            <div id="c4" class="field-box"></div>
-            <div id="b4" class="field-box"></div>
-            <div id="a4" class="field-box"></div>
-
-
-
-         
-            <div id="d3" class="field-box"></div>
-            <div id="c3" class="field-box"></div>
-            <div id="b3" class="field-box"></div>
-            <div id="a3" class="field-box"></div>
-
-
-
-           
-            <div id="d2" class="field-box"></div>
-            <div id="c2" class="field-box"></div>
-            <div id="b2" class="field-box"></div>
-            <div id="a2" class="field-box"></div>
-
-
-
-          
-            <div id="d1" class="field-box"></div>
-            <div id="c1" class="field-box"></div>
-            <div id="b1" class="field-box"></div>
-            <div id="a1" class="field-box"></div>
-
-
-
-    
-
-        </div>
-
-
-
-
-
-
-        <div class="combatant-2">
-
-
-           
-
-
-        </div>
 
 
 
     </div>
+
+
+
+  </div>
 
 
 
