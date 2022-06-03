@@ -15,21 +15,51 @@ body{
 .gameBoard{
 
     width: 100vw;
-    height: 100vh ;
-  
-    background-color: aqua;
+    height: 100vh;
     display: inline-block;
     
 }
 
 
-
+#empty{
+    width: 100px;
+    height: 100px;
+    display: none;
+    
+}
 .player-1{
 
     width: 15vw;
     height: 100vh;
-    background-color: rgb(236, 42, 42);
+    background-color: rgba(0, 18, 65, 0.891);
     float: left;
+
+}
+
+
+
+
+.deck-container-ash{
+
+    width: 80%;
+
+    height: 20%;
+
+    margin: auto;
+
+    
+
+}
+
+.deck-container-gary{
+
+    width: 80%;
+
+    height: 20%;
+
+    margin: auto;
+
+    
 
 }
 
@@ -38,7 +68,7 @@ body{
 
     width: 15vw;
     height: 100vh;
-    background-color: rgb(236, 42, 42);
+    background-color: rgba(0, 18, 65, 0.891);
     float: right;
 
 }
@@ -47,13 +77,27 @@ body{
 
     width: 70vw;
     height: 60vh;
-   
+ 
     float: left;
 
 
   
 }
 
+.combatant-gary{
+    width: 70%;
+    height: 50%;
+ 
+    margin: auto;
+
+}
+
+.combatant-ash{
+    width: 70%;
+    height: 50%;
+   
+    margin: auto;
+}
 
 
 
@@ -62,12 +106,22 @@ body{
 .nextRound{
     width: 100px;
     height: 100px;
-    background-color: rgb(106, 52, 52);
+    background-color: rgb(27, 105, 251);
+    position: absolute;
+    top: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    margin-left: 25px;
+    color: white;
 }
 
 .gameCard{
-    width: 80%;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   
     background-color: white;
 
@@ -76,25 +130,36 @@ body{
     margin-bottom: 20px;
     text-align: center;
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border-radius: 10px;
 }
 
-.gameCard img{
 
-    width: 100%;
-
-    height: 100%;
-}
 
 .gameCard h3 {
 
-    position: absolute;
+   width: 100%;
+   text-align: center;
+   color: white;
+   font-size: 28px;
+   font-weight: 600;
+   color: rgb(243, 229, 157);
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(38, 38, 38);
 }
 
 
 .gameCard h1 {
-
-    color: rgb(247, 245, 120);
-    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(235, 231, 34);
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(38, 38, 38);
+  font-size: 35px;
+   
 }
 
 
@@ -104,7 +169,7 @@ body{
 .battlefield{
     width: 70vw;
     height: 100vh;
-    background-color: rgb(129, 255, 127);
+   
     float: left;
 
     background-image: url(./images/stagebackground2.png);
@@ -115,13 +180,39 @@ body{
 }
 
 
-.field-box{
+.field-box1{
 
     width: 17vw;
     height: 19.6%;
     
     margin: .15vw;
-    background-color: aliceblue;
+    background-color: rgba(78, 187, 85, 0.219);
+   
+    
+    float: left;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('./images/pokeballgary.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+    border-radius: 10px;
+}
+
+
+
+.field-box2{
+
+    width: 17vw;
+    height: 19.6%;
+    
+    margin: .15vw;
+    background-color: rgba(31, 71, 139, 0.438);
    
     
     float: left;
@@ -132,9 +223,44 @@ body{
     align-items: center;
 
 
-   
+    background-image: url('./images/pokeballash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    border-radius: 10px;
+    
 }
 
 
 
 
+.game-over{
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(181, 211, 238);
+    position: absolute;
+    top: 0;
+    left: 15vw;
+
+    text-align: center;
+
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    display: none;
+
+ 
+
+}
+
+
+
+.game-over-image{
+
+width: 50%;
+margin: auto;
+   
+}
