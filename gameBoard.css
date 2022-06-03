@@ -10,6 +10,8 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0%;
+
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -46,6 +48,53 @@ body{
 
 }
 
+<<<<<<< Updated upstream
+=======
+.combatfield{
+
+    width: 70vw;
+    height: 60vh;
+ 
+    float: left;
+
+
+  
+}
+
+.combatant-gary{
+    width: 70%;
+    height: 50%;
+ 
+    margin: auto;
+
+}
+
+.combatant-ash{
+    width: 70%;
+    height: 50%;
+   
+    margin: auto;
+}
+
+.ash-health{
+
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.ash-health h1{
+
+   width: 100%;
+    color: aliceblue;
+}
+
+
+
+
+
+>>>>>>> Stashed changes
 
 .nextRound{
     width: 100px;
@@ -61,9 +110,52 @@ body{
 
     margin: auto;
 
+<<<<<<< Updated upstream
 }
 
 
+=======
+    margin-bottom: 20px;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border-radius: 10px;
+}
+
+
+
+.gameCard h3 {
+
+   width: 100%;
+   text-align: center;
+   color: white;
+   font-size: 30px;
+   font-weight: 700;
+   color: rgb(249, 248, 152);
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(38, 38, 38);
+}
+
+
+.gameCard h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(249, 171, 46);
+    
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(38, 38, 38);
+  font-size: 50px;
+   
+}
+
+
+
+
+
+>>>>>>> Stashed changes
 .battlefield{
     width: 70vw;
     height: 100vh;
@@ -95,3 +187,38 @@ body{
 
 
 
+<<<<<<< Updated upstream
+=======
+.game-over{
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(181, 211, 238);
+    position: absolute;
+    top: 0;
+    left: 15vw;
+
+    text-align: center;
+
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    display: none;
+
+ 
+
+}
+
+
+
+.game-over-image{
+
+width: 50%;
+margin: auto;
+   
+}
+
+
+
+>>>>>>> Stashed changes
