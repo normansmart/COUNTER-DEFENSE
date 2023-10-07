@@ -1,8 +1,4 @@
 
-function PopUp(){
-    document.getElementById('ac-wrapper').style.display="none"; 
-}
-
 const upPop = document.getElementById("ac-wrapper")
 const ashSelect = document.getElementById("container3")
 const paulSelect = document.getElementById("container")

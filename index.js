@@ -41,6 +41,8 @@ const nextRound = document.querySelector('.nextRound')
 const fieldBox = [[d1, c1, b1, a1], [d5, c5, b5, a5]];
 
 
+
+
 //positions
 
 function garyCardToHand(arr) {
@@ -428,14 +430,6 @@ function combat(field1 , field2) {
 
 
 
-
-
-
-
-
-
-
-
 nextRound.addEventListener('click', (e) => {
 
  
@@ -447,8 +441,6 @@ nextRound.addEventListener('click', (e) => {
     }, 2000);
 
 
- 
-  
 
     setTimeout(() => {
         secondRowCombat()

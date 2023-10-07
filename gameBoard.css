@@ -8,6 +8,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0%;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -36,6 +37,14 @@ body{
 
 }
 
+.ash-health{
+
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
 
 
 
@@ -54,12 +63,8 @@ body{
 .deck-container-gary{
 
     width: 80%;
-
     height: 20%;
-
     margin: auto;
-
-    
 
 }
 
@@ -71,6 +76,15 @@ body{
     background-color: rgba(0, 18, 65, 0.891);
     float: right;
 
+}
+
+
+.gary-health{
+
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
 }
 
 .combatfield{
@@ -264,5 +278,9 @@ width: 50%;
 margin: auto;
    
 }
+
+
+
+
 
 
